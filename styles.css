@@ -2,3 +2,72 @@
     width: 90px;
     height: 90px;
 }
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: chartreuse;
+    font-family: Georgia, Times New Romans;
+}
+.navlinks{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 48%;
+}
+.navlinks li{
+list-style: none;
+
+}
+.navlinks a{
+    text-decoration: none;
+    color:black ;
+}
+
+.burger div{
+    width: 25px;
+    height: 5px;
+    background-color: brown;
+    margin: 5px;
+    
+}
+.burger{
+    display: none;
+}
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    .navlinks{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        width: 20%;
+        top: 8vh;
+        background-color: chartreuse;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    }
+    .navlinks li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+
+}
+
+
+        
+
+
+
+
+    
+    
+    
+}
